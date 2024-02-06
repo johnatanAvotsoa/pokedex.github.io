@@ -1,0 +1,86 @@
+*,::after,::before{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    margin : 0 ; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #333;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.container{
+    width: 70%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search{
+    padding: 10px;
+    width: 400px;
+}
+form button {
+    padding: 10px;
+}
+form button:hover{
+    cursor: pointer;
+}
+ul{
+    color: white;
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ul li {
+    height: auto ;
+    padding: 15px;
+    width : 250px ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.loader{
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    display: flex;
+    align-items: center ; 
+    justify-content: center;
+    transform: translateX(-50%);
+    height: 150px;
+    width: 200px;
+}
+.dot{
+    margin: 0 15px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    animation: goUp 0.3s alternate infinite;
+}
+.dot:nth-child(1){
+    animation-delay: 0.1s;
+}
+.dot:nth-child(2){
+    animation-delay: 0.2s;
+}
+.dot:nth-child(3){
+    animation-delay: 0.3s;
+}
+@keyframes goUp {
+    100%{
+        transform: translateY(-30px);
+    }
+}
