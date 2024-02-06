@@ -20,3 +20,4 @@ This project has provided hands-on experience in:
 
 ## Acknowledgments
 Thanks to the Poke API for providing a reliable source of Pokemon data and making this project possible.
+//this is one of my second semester college JavaScript project :)
